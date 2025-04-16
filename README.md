@@ -2,22 +2,6 @@
 
 > CLI para gerar mensagens de commit automáticas seguindo Conventional Commits, usando OpenAI.
 
----
-
-## 📖 Sumário
-
-- [Sobre](#-sobre)  
-- [Pré-requisitos](#-pré-requisitos)  
-- [Instalação](#-instalação)  
-- [Uso](#-uso)  
-- [Configuração](#-configuração)  
-- [Estrutura de Arquivos](#-estrutura-de-arquivos)  
-- [Desenvolvimento](#-desenvolvimento)  
-- [Comandos Disponíveis](#-comandos-disponíveis)  
-- [Contribuição](#-contribuição)  
-- [Licença](#-licença)  
-
----
 
 ## 🔍 Sobre
 
@@ -177,7 +161,3 @@ OPENAI_API_KEY=seu_token_aqui
 5. Abra um Pull Request
 
 ---
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
