@@ -1,7 +1,7 @@
-const simpleGit = require('simple-git');
+import simpleGit from 'simple-git';
 const git = simpleGit();
 
-async function autoStage() {
+export async function autoStage() {
   try {
     await git.add('.');
   } catch (err) {
@@ -10,7 +10,7 @@ async function autoStage() {
   }
 }
 
-async function getStagedDiff() {
+export async function getStagedDiff() {
   try {
     return await git.diff(['--cached']);
   } catch (err) {
@@ -19,7 +19,7 @@ async function getStagedDiff() {
   }
 }
 
-async function commit(message) {
+export async function commit(message) {
   try {
     await git.commit(message);
   } catch (err) {
@@ -27,5 +27,3 @@ async function commit(message) {
     process.exit(1);
   }
 }
-
-module.exports = { autoStage, getStagedDiff, commit };

@@ -1,6 +1,7 @@
 {
   "name": "vormmit",
   "version": "0.1.0",
+  "type": "module",
   "bin": {
     "vormmit": "./src/index.js"
   },
