@@ -1,6 +1,15 @@
 const simpleGit = require('simple-git');
 const git = simpleGit();
 
+async function autoStage() {
+  try {
+    await git.add('.');
+  } catch (err) {
+    console.error('Erro ao adicionar arquivos ao staging:', err.message);
+    process.exit(1);
+  }
+}
+
 async function getStagedDiff() {
   try {
     return await git.diff(['--cached']);
@@ -19,4 +28,4 @@ async function commit(message) {
   }
 }
 
-module.exports = { getStagedDiff, commit };
+module.exports = { autoStage, getStagedDiff, commit };

@@ -5,10 +5,10 @@
     "vormmit": "./src/index.js"
   },
   "dependencies": {
-    "dotenv": "^16.5.0",
-    "inquirer": "^9.3.7",
+    "dotenv": "^16.0.0",
+    "inquirer": "^9.0.0",
     "js-yaml": "^4.1.0",
-    "openai": "^4.94.0",
-    "simple-git": "^3.27.0"
+    "openai": "^3.2.1",
+    "simple-git": "^3.0.0"
   }
 }

@@ -1,14 +1,14 @@
-const inquirer = require('inquirer');
+import inquirer from 'inquirer';
 
-async function confirmCommit(suggestion) {
+export async function confirmCommit(suggestion) {
   console.log('\n💡 Sugestão:\n', suggestion, '\n');
-  const { ok } = await inquirer.prompt([{
-    type: 'confirm',
-    name: 'ok',
-    message: 'Confirmar commit?',
-    default: true
-  }]);
+  const { ok } = await inquirer.prompt([
+    {
+      type: 'confirm',
+      name: 'ok',
+      message: 'Confirmar commit?',
+      default: true,
+    }
+  ]);
   return ok;
 }
-
-module.exports = { confirmCommit };

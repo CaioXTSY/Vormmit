@@ -1,6 +1,6 @@
-const { Configuration, OpenAIApi } = require('openai');
+import { Configuration, OpenAIApi } from 'openai';
 
-async function generateCommitMessage(prompt, model = 'gpt-4o-mini') {
+export async function generateCommitMessage(prompt, model = 'gpt-4o-mini') {
   try {
     const configuration = new Configuration({ apiKey: process.env.OPENAI_API_KEY });
     const openai = new OpenAIApi(configuration);
@@ -15,5 +15,3 @@ async function generateCommitMessage(prompt, model = 'gpt-4o-mini') {
     process.exit(1);
   }
 }
-
-module.exports = { generateCommitMessage };
