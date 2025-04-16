@@ -1,0 +1,3 @@
+language: pt-br
+model: gpt-4o-mini
+default_type: feat

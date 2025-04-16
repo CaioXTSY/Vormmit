@@ -1,0 +1,14 @@
+{
+  "name": "vormmit",
+  "version": "0.1.0",
+  "bin": {
+    "vormmit": "./src/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "inquirer": "^9.3.7",
+    "js-yaml": "^4.1.0",
+    "openai": "^4.94.0",
+    "simple-git": "^3.27.0"
+  }
+}
