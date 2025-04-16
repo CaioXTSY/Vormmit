@@ -62,7 +62,7 @@ Fluxo:
 2. Obtém o diff staged  
 3. Gera mensagem de commit via OpenAI  
 4. Exibe e pergunta “Confirmar commit?”  
-5. Se “sim”, executa `git commit -m "<mensagem>"`
+5. Se “Y”, executa `git commit -m "<mensagem>"`
 
 ---
 
