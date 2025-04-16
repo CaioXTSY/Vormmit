@@ -1,14 +1,14 @@
 import inquirer from 'inquirer';
 
-export async function confirmCommit(suggestion) {
+export async function confirmCommit(suggestion: string): Promise<boolean> {
   console.log('\n💡 Sugestão:\n', suggestion, '\n');
-  const { ok } = await inquirer.prompt([
+  const answers = await inquirer.prompt([
     {
       type: 'confirm',
       name: 'ok',
       message: 'Confirmar commit?',
-      default: true,
+      default: true
     }
   ]);
-  return ok;
+  return answers.ok;
 }

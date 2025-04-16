@@ -1,7 +1,7 @@
-export function buildPrompt(diff, config, patterns) {
-  const typeList = patterns.types.join(', ');
-  const defaultType = config.default_type || 'feat';
-  const language = config.language || 'pt-br';
+export function buildPrompt(diff: string, config: any, patterns: any): string {
+  const typeList: string = patterns.types.join(', ');
+  const defaultType: string = config.default_type || 'feat';
+  const language: string = config.language || 'pt-br';
 
   return `
 Você é um assistente que cria mensagens de commit seguindo o Conventional Commits.
